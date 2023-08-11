@@ -1,0 +1,13 @@
+ersion: '3.9'
+
+services:
+  app:
+    image: 'muradkina/hesap-api:1.0'
+    container_name: hesap-api
+    ports:
+      - 8080:8080
+  fe:
+    image: 'muradkina/hesap-fe:1.0'
+    container_name: hesap-fe
+    ports:
+      - 3000:3000
